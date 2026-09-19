@@ -160,6 +160,34 @@ app.get(["/booking-confirm", "/bookingConform"], (req, res) => {
 app.get("/Mybookings", (req, res) => {
     res.render("Mybooking");
 });
+app.get("/privacy", (req, res) => {
+    res.render("privacy");
+});
+app.get("/refunds", (req, res) => {
+    res.render("refunds");
+});
+
+
+app.get("/cookies", (req, res) => {
+    res.render("cookies");
+});
+
+
+
+// BLOG 1
+app.get("/blog/rental-tips-2026", (req, res) => {
+    res.render("blog-rental-tips");
+});
+
+// BLOG 2
+app.get("/blog/choose-right-rental-car", (req, res) => {
+    res.render("blog-choose-car");
+});
+
+// BLOG 3
+app.get("/blog/things-to-check-before-renting", (req, res) => {
+    res.render("blog-check-before-renting");
+});
 
 // =====================================================
 // PAYMENT PAGE

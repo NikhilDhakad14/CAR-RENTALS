@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Cookie Policy - RideWave</title>
+    <link rel="icon" type="image/png" href="/images/title.png.jpeg">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #08123B;
+            background: #ffffff;
+        }
+
+        /* =========================
+           NAVBAR
+        ========================= */
+
+        .policy-navbar {
+            width: 100%;
+            height: 90px;
+            padding: 0 8%;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            background: #ffffff;
+            border-bottom: 1px solid #eeeeee;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            height: 90px;
+            width: auto;
+        }
+
+        .logo img {
+            display: block;
+            height: 90px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .back-home {
+            color: #08123B;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+            transition: 0.3s ease;
+        }
+
+        .back-home:hover {
+            color: #FF532E;
+        }
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .policy-hero {
+            background: #08123B;
+            color: #ffffff;
+            padding: 75px 8%;
+        }
+
+        .policy-container {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .policy-hero h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .policy-hero p {
+            color: #aaaabd;
+            font-size: 16px;
+            line-height: 1.7;
+            max-width: 700px;
+        }
+
+        .orange-line {
+            width: 45px;
+            height: 3px;
+            background: #FF532E;
+            border-radius: 10px;
+            margin-top: 25px;
+        }
+
+        /* =========================
+           CONTENT
+        ========================= */
+
+        .policy-content {
+            padding: 70px 8%;
+            background: #ffffff;
+        }
+
+        .policy-content-inner {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .policy-content h2 {
+            color: #08123B;
+            font-size: 25px;
+            margin-top: 40px;
+            margin-bottom: 18px;
+        }
+
+        .policy-content h2:first-child {
+            margin-top: 0;
+        }
+
+        .policy-content p {
+            color: #666666;
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 18px;
+        }
+
+        .policy-content ul {
+            padding-left: 22px;
+            margin-bottom: 20px;
+        }
+
+        .policy-content li {
+            color: #666666;
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+
+        /* =========================
+           FLASH
+        ========================= */
+
+        #flashMessage {
+            position: fixed;
+            top: 25px;
+            right: 25px;
+
+            z-index: 99999;
+
+            min-width: 280px;
+            max-width: 380px;
+
+            padding: 15px 18px;
+
+            background: #ffffff;
+            color: #08123B;
+
+            border-radius: 10px;
+
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.20);
+
+            display: none;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px;
+
+            border-left: 4px solid #FF532E;
+
+            animation: flashSlide 0.4s ease;
+        }
+
+        #flashMessage.show {
+            display: flex;
+        }
+
+        .flash-content {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .flash-icon {
+            width: 30px;
+            height: 30px;
+            min-width: 30px;
+
+            border-radius: 50%;
+
+            background: #FF532E;
+            color: #ffffff;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-weight: bold;
+        }
+
+        .flash-text {
+            color: #08123B;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .flash-close {
+            border: none;
+            background: transparent;
+            color: #08123B;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .flash-close:hover {
+            color: #FF532E;
+        }
+
+        @keyframes flashSlide {
+
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+
+        }
+
+        @keyframes flashHide {
+
+            from {
+                opacity: 1;
+                transform: translateX(0);
+            }
+
+            to {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+
+        }
+
+        #flashMessage.hide {
+            animation: flashHide 0.35s ease forwards;
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        .policy-footer {
+            background: #08123B;
+            color: #aaaabd;
+
+            text-align: center;
+
+            padding: 30px 8%;
+
+            font-size: 14px;
+        }
+
+        .policy-footer a {
+            color: #aaaabd;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+
+        .policy-footer a:hover {
+            color: #FF532E;
+        }
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 768px) {
+
+            .policy-navbar {
+                height: 75px;
+                padding: 0 25px;
+            }
+
+            .logo {
+                height: 75px;
+            }
+
+            .logo img {
+                height: 75px;
+            }
+
+            .policy-hero {
+                padding: 60px 25px;
+            }
+
+            .policy-hero h1 {
+                font-size: 32px;
+            }
+
+            .policy-content {
+                padding: 50px 25px;
+            }
+
+            .policy-content h2 {
+                font-size: 23px;
+            }
+
+            .policy-content p,
+            .policy-content li {
+                font-size: 15px;
+            }
+
+            #flashMessage {
+                left: 20px;
+                right: 20px;
+                top: 20px;
+                min-width: auto;
+                max-width: none;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- NAVBAR -->
+
+    <nav class="policy-navbar">
+
+        <a href="/" class="logo">
+
+            <img
+                src="/images/logo.png"
+                alt="RideWave"
+            >
+
+        </a>
+
+
+        <a
+            href="/"
+            class="back-home"
+            onclick="showFlash('Returning to RideWave...')"
+        >
+            ← Back to Home
+        </a>
+
+    </nav>
+
+
+
+    <!-- FLASH -->
+
+    <div id="flashMessage">
+
+        <div class="flash-content">
+
+            <div class="flash-icon">
+                ✓
+            </div>
+
+            <div
+                class="flash-text"
+                id="flashText"
+            >
+                Message
+            </div>
+
+        </div>
+
+
+        <button
+            class="flash-close"
+            onclick="hideFlash()"
+        >
+            ×
+        </button>
+
+    </div>
+
+
+
+    <!-- HERO -->
+
+    <section class="policy-hero">
+
+        <div class="policy-container">
+
+            <h1>
+                Cookie Policy
+            </h1>
+
+            <p>
+                Learn how RideWave uses cookies and
+                similar technologies to improve your
+                browsing experience.
+            </p>
+
+            <div class="orange-line"></div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- CONTENT -->
+
+    <section class="policy-content">
+
+        <div class="policy-content-inner">
+
+
+            <h2>
+                1. What Are Cookies?
+            </h2>
+
+            <p>
+                Cookies are small text files stored on
+                your device when you visit a website.
+                They help websites remember information
+                and provide a better browsing experience.
+            </p>
+
+
+            <h2>
+                2. How We Use Cookies
+            </h2>
+
+            <p>
+                RideWave may use cookies to maintain
+                sessions, remember preferences, improve
+                website functionality, and understand
+                how visitors interact with our website.
+            </p>
+
+
+            <h2>
+                3. Types of Cookies
+            </h2>
+
+            <ul>
+
+                <li>
+                    <strong>Essential Cookies:</strong>
+                    Required for important website
+                    functionality.
+                </li>
+
+                <li>
+                    <strong>Preference Cookies:</strong>
+                    Help remember your settings and
+                    preferences.
+                </li>
+
+                <li>
+                    <strong>Analytics Cookies:</strong>
+                    Help us understand website usage
+                    and improve our services.
+                </li>
+
+            </ul>
+
+
+            <h2>
+                4. Third-Party Cookies
+            </h2>
+
+            <p>
+                Some third-party services integrated
+                with RideWave may use their own cookies
+                or similar technologies according to
+                their respective policies.
+            </p>
+
+
+            <h2>
+                5. Managing Cookies
+            </h2>
+
+            <p>
+                Most web browsers allow you to control
+                or delete cookies through their settings.
+                Disabling certain cookies may affect
+                some website functionality.
+            </p>
+
+
+            <h2>
+                6. Updates to This Policy
+            </h2>
+
+            <p>
+                RideWave may update this Cookie Policy
+                when necessary. Any changes will be
+                published on this page.
+            </p>
+
+
+            <h2>
+                7. Contact Us
+            </h2>
+
+            <p>
+                If you have questions about our use of
+                cookies, please contact us through our
+                <a
+                    href="/contact"
+                    style="color:#FF532E;text-decoration:none;"
+                >
+                    Contact page
+                </a>.
+            </p>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+
+    <footer class="policy-footer">
+
+        <p>
+            © 2026 RideWave. All rights reserved.
+        </p>
+
+        <br>
+
+        <a href="/privacy">
+            Privacy
+        </a>
+
+        <a href="/refunds">
+            Refunds Policy
+        </a>
+
+        <a href="/cookies">
+            Cookie Policy
+        </a>
+
+    </footer>
+
+
+
+    <!-- FLASH JS -->
+
+    <script>
+
+        let flashTimer;
+
+
+        function showFlash(message) {
+
+            const flash =
+                document.getElementById("flashMessage");
+
+            const text =
+                document.getElementById("flashText");
+
+
+            if (!flash || !text) {
+                return;
+            }
+
+
+            clearTimeout(flashTimer);
+
+            text.textContent = message;
+
+            flash.classList.remove("hide");
+
+            flash.classList.add("show");
+
+
+            flashTimer = setTimeout(() => {
+
+                hideFlash();
+
+            }, 2500);
+
+        }
+
+
+        function hideFlash() {
+
+            const flash =
+                document.getElementById("flashMessage");
+
+
+            if (!flash) {
+                return;
+            }
+
+
+            flash.classList.remove("show");
+
+            flash.classList.add("hide");
+
+
+            setTimeout(() => {
+
+                flash.classList.remove("hide");
+
+            }, 350);
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>

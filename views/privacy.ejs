@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Privacy Policy - RideWave</title>
+    <link rel="icon" type="image/png" href="/images/title.png.jpeg">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #ffffff;
+            color: #08123B;
+        }
+
+
+        /* =========================================
+           NAVBAR
+        ========================================= */
+
+        .privacy-navbar {
+
+            width: 100%;
+
+            height: 75px;
+
+            background: #ffffff;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            padding: 0 8%;
+
+            border-bottom: 1px solid #eeeeee;
+
+        }
+
+
+        .privacy-logo {
+
+            font-size: 25px;
+
+            font-weight: 700;
+
+            color: #08123B;
+
+            text-decoration: none;
+
+        }
+
+
+        .privacy-logo span {
+
+            color: #FF532E;
+
+        }
+
+
+        .privacy-back {
+
+            color: #08123B;
+
+            text-decoration: none;
+
+            font-size: 15px;
+
+            font-weight: 600;
+
+            transition: 0.3s ease;
+
+        }
+
+
+        .privacy-back:hover {
+
+            color: #FF532E;
+
+        }
+
+
+        /* =========================================
+           PRIVACY HERO
+        ========================================= */
+
+        .privacy-hero {
+
+            background: #08123B;
+
+            padding: 75px 8%;
+
+            color: #ffffff;
+
+        }
+
+
+        .privacy-container {
+
+            max-width: 1100px;
+
+            margin: 0 auto;
+
+        }
+
+
+        .privacy-hero h1 {
+
+            font-size: 42px;
+
+            font-weight: 700;
+
+            margin-bottom: 15px;
+
+        }
+
+
+        .privacy-hero p {
+
+            color: #aaaabd;
+
+            font-size: 16px;
+
+            line-height: 1.7;
+
+            max-width: 650px;
+
+        }
+
+
+        .privacy-line {
+
+            width: 45px;
+
+            height: 3px;
+
+            background: #FF532E;
+
+            border-radius: 10px;
+
+            margin-top: 25px;
+
+        }
+
+
+        /* =========================================
+           CONTENT
+        ========================================= */
+
+        .privacy-content {
+
+            padding: 70px 8%;
+
+            background: #ffffff;
+
+        }
+
+
+        .privacy-content-inner {
+
+            max-width: 900px;
+
+            margin: 0 auto;
+
+        }
+
+
+        .privacy-content h2 {
+
+            font-size: 25px;
+
+            color: #08123B;
+
+            margin-bottom: 18px;
+
+            margin-top: 40px;
+
+        }
+
+
+        .privacy-content h2:first-child {
+
+            margin-top: 0;
+
+        }
+
+
+        .privacy-content p {
+
+            font-size: 16px;
+
+            line-height: 1.8;
+
+            color: #666666;
+
+            margin-bottom: 18px;
+
+        }
+
+
+        .privacy-content ul {
+
+            padding-left: 22px;
+
+            margin-bottom: 20px;
+
+        }
+
+
+        .privacy-content li {
+
+            font-size: 16px;
+
+            line-height: 1.8;
+
+            color: #666666;
+
+            margin-bottom: 10px;
+
+        }
+
+
+        .privacy-content strong {
+
+            color: #08123B;
+
+        }
+
+
+        /* =========================================
+           FLASH MESSAGE
+        ========================================= */
+
+        #flashMessage {
+
+            position: fixed;
+
+            top: 25px;
+
+            right: 25px;
+
+            z-index: 99999;
+
+            min-width: 280px;
+
+            max-width: 380px;
+
+            padding: 15px 18px;
+
+            background: #ffffff;
+
+            color: #08123B;
+
+            border-radius: 10px;
+
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.20);
+
+            display: none;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            gap: 15px;
+
+            font-size: 15px;
+
+            font-weight: 600;
+
+            border-left: 4px solid #FF532E;
+
+            animation: flashSlide 0.4s ease;
+
+        }
+
+
+        #flashMessage.show {
+
+            display: flex;
+
+        }
+
+
+        .flash-content {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 10px;
+
+        }
+
+
+        .flash-icon {
+
+            width: 30px;
+
+            height: 30px;
+
+            min-width: 30px;
+
+            border-radius: 50%;
+
+            background: #FF532E;
+
+            color: #ffffff;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 15px;
+
+            font-weight: 700;
+
+        }
+
+
+        .flash-text {
+
+            color: #08123B;
+
+            line-height: 1.4;
+
+        }
+
+
+        .flash-close {
+
+            border: none;
+
+            background: transparent;
+
+            color: #08123B;
+
+            font-size: 20px;
+
+            cursor: pointer;
+
+            padding: 2px 5px;
+
+            line-height: 1;
+
+        }
+
+
+        .flash-close:hover {
+
+            color: #FF532E;
+
+        }
+
+
+        @keyframes flashSlide {
+
+            from {
+
+                opacity: 0;
+
+                transform: translateX(30px);
+
+            }
+
+            to {
+
+                opacity: 1;
+
+                transform: translateX(0);
+
+            }
+
+        }
+
+
+        @keyframes flashHide {
+
+            from {
+
+                opacity: 1;
+
+                transform: translateX(0);
+
+            }
+
+            to {
+
+                opacity: 0;
+
+                transform: translateX(30px);
+
+            }
+
+        }
+
+
+        #flashMessage.hide {
+
+            animation: flashHide 0.35s ease forwards;
+
+        }
+
+
+        /* =========================================
+           FOOTER
+        ========================================= */
+
+        .privacy-footer {
+
+            background: #08123B;
+
+            padding: 30px 8%;
+
+            text-align: center;
+
+            color: #aaaabd;
+
+            font-size: 14px;
+
+        }
+
+
+        .privacy-footer a {
+
+            color: #aaaabd;
+
+            text-decoration: none;
+
+            margin: 0 8px;
+
+        }
+
+
+        .privacy-footer a:hover {
+
+            color: #FF532E;
+
+        }
+
+
+        /* =========================================
+           MOBILE
+        ========================================= */
+
+        @media (max-width: 768px) {
+
+            .privacy-navbar {
+
+                padding: 0 25px;
+
+                height: 65px;
+
+            }
+
+
+            .privacy-logo {
+
+                font-size: 22px;
+
+            }
+
+
+            .privacy-hero {
+
+                padding: 60px 25px;
+
+            }
+
+
+            .privacy-hero h1 {
+
+                font-size: 32px;
+
+            }
+
+
+            .privacy-content {
+
+                padding: 50px 25px;
+
+            }
+
+
+            .privacy-content h2 {
+
+                font-size: 23px;
+
+            }
+
+
+            .privacy-content p,
+            .privacy-content li {
+
+                font-size: 15px;
+
+            }
+
+
+            #flashMessage {
+
+                left: 20px;
+
+                right: 20px;
+
+                top: 20px;
+
+                min-width: auto;
+
+                max-width: none;
+
+                width: auto;
+
+            }
+
+        }
+
+
+        /* =========================
+   RIDEWAVE LOGO
+========================= */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 90px;
+    width: auto;
+
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.logo img {
+    display: block;
+
+    height: 76px;
+    width: auto;
+
+    object-fit: contain;
+
+    transition: transform 0.3s ease;
+}
+
+.logo:hover img {
+    transform: scale(1.03);
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 768px) {
+
+    .logo {
+        height: 45px;
+    }
+
+    .logo img {
+        width: 125px;
+        max-height: 43px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+    .logo {
+        height: 42px;
+    }
+
+    .logo img {
+        width: 115px;
+        max-height: 40px;
+    }
+}
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         NAVBAR
+    ========================================== -->
+
+    <nav class="privacy-navbar">
+  <a
+                href="/"
+                class="logo"
+            >
+
+                <img
+                    src="/images/logo.png"
+                    alt="RideWave"
+                >
+
+
+
+        <a
+            href="/"
+            class="privacy-back"
+            onclick="showFlash('Returning to RideWave...')"
+        >
+            ← Back to Home
+        </a>
+
+    </nav>
+
+
+
+    <!-- =========================================
+         FLASH MESSAGE
+    ========================================== -->
+
+    <div id="flashMessage">
+
+        <div class="flash-content">
+
+            <div class="flash-icon">
+                ✓
+            </div>
+
+            <div
+                class="flash-text"
+                id="flashText"
+            >
+                Message
+            </div>
+
+        </div>
+
+
+        <button
+            type="button"
+            class="flash-close"
+            onclick="hideFlash()"
+        >
+            ×
+        </button>
+
+    </div>
+
+
+
+    <!-- =========================================
+         PRIVACY HERO
+    ========================================== -->
+
+    <section class="privacy-hero">
+
+        <div class="privacy-container">
+
+            <h1>
+                Privacy Policy
+            </h1>
+
+            <p>
+                Your privacy matters to us. Learn how
+                RideWave collects, uses, and protects
+                your information.
+            </p>
+
+            <div class="privacy-line"></div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         PRIVACY CONTENT
+    ========================================== -->
+
+    <section class="privacy-content">
+
+        <div class="privacy-content-inner">
+
+
+            <h2>
+                1. Introduction
+            </h2>
+
+            <p>
+                Welcome to RideWave. We respect your
+                privacy and are committed to protecting
+                your personal information when you use
+                our website and car rental services.
+            </p>
+
+
+            <h2>
+                2. Information We Collect
+            </h2>
+
+            <p>
+                When you use RideWave, we may collect
+                information such as:
+            </p>
+
+            <ul>
+
+                <li>
+                    Your name and contact details.
+                </li>
+
+                <li>
+                    Account login information.
+                </li>
+
+                <li>
+                    Booking and rental details.
+                </li>
+
+                <li>
+                    Payment-related information.
+                </li>
+
+                <li>
+                    Information you provide through
+                    our contact forms.
+                </li>
+
+            </ul>
+
+
+            <h2>
+                3. How We Use Your Information
+            </h2>
+
+            <p>
+                We use the information we collect to
+                provide and improve our services, process
+                bookings, communicate with you, and
+                maintain the security of our website.
+            </p>
+
+
+            <h2>
+                4. Data Protection
+            </h2>
+
+            <p>
+                We take reasonable steps to protect
+                your personal information from
+                unauthorized access, misuse, or
+                disclosure.
+            </p>
+
+
+            <h2>
+                5. Cookies
+            </h2>
+
+            <p>
+                RideWave may use cookies and similar
+                technologies to improve website
+                functionality and understand how
+                visitors use our services.
+            </p>
+
+
+            <h2>
+                6. Third-Party Services
+            </h2>
+
+            <p>
+                Our website may use third-party
+                services for features such as payment
+                processing, maps, hosting, or analytics.
+                These services may have their own
+                privacy policies.
+            </p>
+
+
+            <h2>
+                7. Your Rights
+            </h2>
+
+            <p>
+                You may contact us to request access
+                to, correction of, or deletion of your
+                personal information, where applicable.
+            </p>
+
+
+            <h2>
+                8. Contact Us
+            </h2>
+
+            <p>
+                If you have any questions about this
+                Privacy Policy, please contact the
+                RideWave team through our
+                <a
+                    href="/contact"
+                    style="color:#FF532E; text-decoration:none;"
+                >
+                    Contact page
+                </a>.
+            </p>
+
+
+            <h2>
+                9. Policy Updates
+            </h2>
+
+            <p>
+                We may update this Privacy Policy from
+                time to time. Any changes will be
+                reflected on this page.
+            </p>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="privacy-footer">
+
+        <p>
+            © 2026 RideWave. All rights reserved.
+        </p>
+
+        <br>
+
+        <a href="/privacy">
+            Privacy
+        </a>
+
+        <a href="/refunds">
+            Refunds Policy
+        </a>
+
+        <a href="/cookies">
+            Cookie Policy
+        </a>
+
+    </footer>
+
+
+
+    <!-- =========================================
+         SHOW FLASH JS
+    ========================================== -->
+
+    <script>
+
+        let flashTimer;
+
+
+        function showFlash(message) {
+
+            const flash =
+                document.getElementById("flashMessage");
+
+            const flashText =
+                document.getElementById("flashText");
+
+
+            if (!flash || !flashText) {
+                return;
+            }
+
+
+            clearTimeout(flashTimer);
+
+
+            flashText.textContent = message;
+
+
+            flash.classList.remove("hide");
+
+            flash.classList.add("show");
+
+
+            flashTimer = setTimeout(() => {
+
+                hideFlash();
+
+            }, 2500);
+
+        }
+
+
+
+        function hideFlash() {
+
+            const flash =
+                document.getElementById("flashMessage");
+
+
+            if (!flash) {
+                return;
+            }
+
+
+            flash.classList.remove("show");
+
+            flash.classList.add("hide");
+
+
+            setTimeout(() => {
+
+                flash.classList.remove("hide");
+
+            }, 350);
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>
